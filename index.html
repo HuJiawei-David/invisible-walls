@@ -1,0 +1,1505 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Invisible Walls — A Manifesto for Cross-Cultural Belonging at the University of Auckland</title>
+<meta name="description" content="The Invisible Walls: a student manifesto with five practical demands to turn diversity into connection, participation and belonging between domestic and international students at the University of Auckland. Step Through the Glass. Build Belonging Together.">
+<meta name="theme-color" content="#1F3A5F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Invisible Walls — Step Through the Glass.">
+<meta property="og:description" content="A Manifesto for Cross-Cultural Belonging at the University of Auckland. Five demands, one counter, and a consent-first story wall. Build Belonging Together.">
+<meta property="og:image" content="assets/poster.jpg">
+<meta property="og:image:alt" content="The Invisible Walls poster: students in front of a glass wall with an open door of amber light.">
+<meta property="og:locale" content="en_NZ">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 40'%3E%3Crect width='32' height='40' rx='6' fill='%231F3A5F'/%3E%3Cpath d='M9 36V10h14v26z' fill='%23F2A93B'/%3E%3Cpath d='M6 37V8a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v29' fill='none' stroke='%23E6F1F4' stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+  :root {
+    --navy: #1F3A5F;
+    --navy-deep: #152B47;      /* darker navy derived from #1F3A5F */
+    --navy-deeper: #0E1F33;    /* deepest navy for depth */
+    --amber: #F2A93B;
+    --ice: #E6F1F4;
+
+    --ice-soft: rgba(230, 241, 244, .84);
+    --ice-line: rgba(230, 241, 244, .22);
+    --ice-glass: rgba(230, 241, 244, .06);
+    --amber-wash: rgba(242, 169, 59, .14);
+    --glow: 0 0 0 3px rgba(242, 169, 59, .35), 0 0 28px rgba(242, 169, 59, .38);
+
+    --font-head: "Montserrat", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Open Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    --gutter: clamp(16px, 5vw, 40px);
+    --max: 1120px;
+    --radius: 20px;
+    --focus: var(--amber);
+    --nav-h: 64px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--nav-h) + 12px); }
+  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+  body {
+    margin: 0;
+    background: var(--navy-deep);
+    color: var(--ice);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.68;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, svg, video { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1.15; margin: 0 0 .5em; letter-spacing: -.01em; }
+  h2 { font-size: clamp(1.9rem, 6.4vw, 3rem); }
+  h3 { font-size: clamp(1.35rem, 4.6vw, 1.75rem); }
+  p { margin: 0 0 1em; }
+  a { color: inherit; text-underline-offset: .2em; }
+  button, input, textarea, select { font: inherit; color: inherit; }
+
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+  .section--ice { --focus: var(--navy); }
+
+  .sr-only {
+    position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+  .skip-link {
+    position: absolute; left: 12px; top: -80px; z-index: 100;
+    background: var(--amber); color: var(--navy-deeper); padding: 12px 18px; border-radius: 10px;
+    font-family: var(--font-head); font-weight: 700; text-decoration: none;
+  }
+  .skip-link:focus { top: 12px; }
+
+  .container { width: min(calc(100% - 2 * var(--gutter)), var(--max)); margin-inline: auto; }
+  .narrow { max-width: 68ch; }
+  .section { padding-block: clamp(72px, 11vw, 128px); position: relative; }
+  .section--ice { background: var(--ice); color: var(--navy); }
+  .section--deeper { background: var(--navy-deeper); }
+  .section--navy { background: var(--navy); }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: .6em;
+    font-family: var(--font-head); font-weight: 700; font-size: .78rem;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin: 0 0 1rem;
+  }
+  .eyebrow::before { content: ""; width: 22px; height: 2px; background: currentColor; border-radius: 2px; }
+  .section--ice .eyebrow { color: var(--navy); }
+  .section--ice .eyebrow::before { background: var(--amber); height: 3px; }
+  .lead { font-size: clamp(1.1rem, 3.6vw, 1.3rem); line-height: 1.6; }
+  .muted { color: var(--ice-soft); }
+  .cite { white-space: nowrap; }
+
+  /* ---------- Buttons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: .55em;
+    min-height: 50px; padding: .75em 1.4em; border-radius: 999px;
+    font-family: var(--font-head); font-weight: 700; font-size: 1rem; line-height: 1.2;
+    text-decoration: none; border: 2px solid transparent; cursor: pointer;
+    transition: box-shadow .25s ease, transform .25s ease, background-color .25s ease, border-color .25s ease;
+  }
+  .btn svg { width: 18px; height: 18px; flex: none; }
+  .btn--amber { background: var(--amber); color: var(--navy-deeper); }
+  .btn--ghost { background: transparent; color: var(--ice); border-color: rgba(230, 241, 244, .55); }
+  .btn--small { min-height: 44px; padding: .55em 1.1em; font-size: .92rem; }
+  .btn:hover, .btn:focus-visible { box-shadow: var(--glow); }
+  .btn--ghost:hover, .btn--ghost:focus-visible { border-color: var(--amber); }
+  .btn:disabled { opacity: .45; cursor: not-allowed; box-shadow: none; }
+  @media (prefers-reduced-motion: no-preference) { .btn:hover { transform: translateY(-1px); } }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+  /* ---------- Glass ---------- */
+  .glass {
+    background: linear-gradient(160deg, rgba(230, 241, 244, .1), rgba(230, 241, 244, .03));
+    border: 1px solid var(--ice-line);
+    border-radius: var(--radius);
+  }
+
+  /* ---------- Door icon (the five-doors motif) ---------- */
+  .door {
+    --door-w: 32px;
+    --door-fill: rgba(242, 169, 59, .16);
+    --door-stroke: var(--amber);
+    --door-floor: rgba(230, 241, 244, .38);
+    position: relative; display: inline-grid; place-items: center; flex: none;
+    width: var(--door-w); aspect-ratio: 32 / 40;
+  }
+  .door svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; transition: filter .3s ease; }
+  .door__num {
+    position: relative; padding-top: 14%;
+    font-family: var(--font-head); font-weight: 700; line-height: 1;
+    font-size: calc(var(--door-w) * .42); color: var(--ice);
+  }
+  .door.is-lit, .is-lit > .door { --door-fill: var(--amber); }
+  .door.is-lit .door__num, .is-lit > .door .door__num { color: var(--navy-deeper); }
+  .door.is-lit svg, .is-lit > .door svg { filter: drop-shadow(0 0 7px rgba(242, 169, 59, .65)); }
+  .section--ice .door { --door-stroke: var(--navy); --door-fill: rgba(242, 169, 59, .45); --door-floor: rgba(31, 58, 95, .35); }
+  .section--ice .door .door__num { color: var(--navy); }
+
+  /* ---------- Sticky nav ---------- */
+  .site-nav {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(14, 31, 51, .86);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(230, 241, 244, .12);
+  }
+  .site-nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: var(--nav-h); }
+  .brand {
+    display: inline-flex; align-items: center; gap: 10px; text-decoration: none;
+    font-family: var(--font-head); font-weight: 700; font-size: .95rem; letter-spacing: .01em;
+    border-radius: 8px; padding: 4px 2px;
+  }
+  .brand .door { --door-w: 22px; --door-fill: var(--amber); }
+  .nav-doors { display: flex; align-items: center; gap: 2px; list-style: none; margin: 0; padding: 0; }
+  .nav-doors__label { font-size: .72rem; font-family: var(--font-head); letter-spacing: .14em; text-transform: uppercase; color: var(--ice-soft); margin-right: 8px; display: none; }
+  .nav-door {
+    display: grid; place-items: center; width: 40px; height: 48px; border-radius: 10px; text-decoration: none;
+    transition: background-color .25s ease, box-shadow .25s ease;
+  }
+  .nav-door .door { --door-w: 25px; }
+  .nav-door:hover, .nav-door:focus-visible { background: rgba(242, 169, 59, .12); box-shadow: 0 0 18px rgba(242, 169, 59, .3); }
+  .nav-door.is-visited .door { --door-fill: rgba(242, 169, 59, .42); }
+  .nav-door.is-current .door { --door-fill: var(--amber); }
+  .nav-door.is-current .door__num { color: var(--navy-deeper); }
+  .nav-door.is-current .door svg { filter: drop-shadow(0 0 7px rgba(242, 169, 59, .7)); }
+  @media (max-width: 459px) { .brand__text { display: none; } }
+  .brand__text { white-space: nowrap; }
+  @media (min-width: 720px) { .nav-doors__label { display: inline; } .nav-doors { gap: 4px; } }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(70% 45% at 50% 82%, rgba(242, 169, 59, .16), transparent 70%),
+      linear-gradient(180deg, var(--navy-deeper) 0%, var(--navy-deep) 55%, var(--navy) 100%);
+  }
+  .hero__inner { display: grid; gap: 36px; padding-block: 44px 72px; align-items: center; }
+  .hero h1 { font-size: clamp(2.6rem, 11vw, 4.9rem); line-height: 1.02; letter-spacing: -.025em; margin-bottom: .35em; }
+  .hero__subtitle { font-size: clamp(1.05rem, 3.8vw, 1.3rem); color: var(--ice-soft); max-width: 36ch; margin-bottom: 1.6rem; }
+  .slogan { margin: 0 0 1.4rem; padding-left: 18px; border-left: 4px solid var(--amber); }
+  .slogan__main { display: block; font-family: var(--font-head); font-weight: 700; font-size: clamp(1.8rem, 7.4vw, 2.8rem); line-height: 1.08; letter-spacing: -.015em; }
+  .slogan__sub { display: block; margin-top: .45em; font-family: var(--font-head); font-weight: 700; font-size: clamp(1.05rem, 4vw, 1.35rem); color: var(--amber); }
+  .hero__summary { max-width: 46ch; margin-bottom: 1.8rem; }
+  .hero__art { width: 100%; max-width: 560px; margin-inline: auto; }
+  @media (min-width: 920px) {
+    .hero { background:
+      radial-gradient(45% 60% at 74% 58%, rgba(242, 169, 59, .18), transparent 70%),
+      linear-gradient(180deg, var(--navy-deeper) 0%, var(--navy-deep) 55%, var(--navy) 100%); }
+    .hero__inner { grid-template-columns: 1.05fr .95fr; padding-block: 96px 120px; gap: 56px; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .breathe { animation: breathe 6s ease-in-out infinite; transform-origin: center; }
+    .shimmer { animation: shimmer 5s ease-in-out infinite; }
+  }
+  @keyframes breathe { 0%, 100% { opacity: .75; } 50% { opacity: 1; } }
+  @keyframes shimmer { 0%, 100% { opacity: .92; } 50% { opacity: 1; } }
+
+  /* ---------- Section heads ---------- */
+  .section-head { margin-bottom: clamp(32px, 6vw, 56px); max-width: 60ch; }
+  .section-head p:last-child { margin-bottom: 0; }
+
+  /* ---------- Why this matters ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr)); gap: 12px; margin-top: clamp(36px, 6vw, 56px); padding: 0; list-style: none; }
+  @media (min-width: 860px) { .stats { grid-template-columns: repeat(4, 1fr); gap: 18px; } }
+  .stat {
+    position: relative; background: var(--navy); color: var(--ice); border-radius: 18px;
+    padding: 22px 16px 18px; overflow: hidden; display: flex; flex-direction: column;
+  }
+  .stat::before { content: ""; position: absolute; left: 16px; right: 16px; top: 0; height: 4px; background: var(--amber); border-radius: 0 0 4px 4px; }
+  .stat__pre { font-family: var(--font-head); font-weight: 700; font-size: .85rem; color: var(--amber); text-transform: uppercase; letter-spacing: .1em; }
+  .stat__num { font-family: var(--font-head); font-weight: 700; font-size: clamp(2rem, 8vw, 2.9rem); line-height: 1; color: var(--amber); letter-spacing: -.02em; margin: .1em 0 .35em; }
+  .stat__label { font-size: .95rem; line-height: 1.45; margin-bottom: .8em; }
+  .stat__cite { margin-top: auto; font-size: .78rem; color: var(--ice-soft); }
+
+  /* ---------- Frame ---------- */
+  .shift { display: grid; gap: 14px; align-items: stretch; margin-bottom: clamp(44px, 7vw, 72px); }
+  .shift__card { padding: 24px 22px; border-radius: var(--radius); }
+  .shift__card .label { font-family: var(--font-head); font-weight: 700; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; margin-bottom: .6rem; display: block; }
+  .shift__card p { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.25rem, 4.6vw, 1.6rem); line-height: 1.25; margin: 0; }
+  .shift__from { border: 2px dashed rgba(230, 241, 244, .35); color: var(--ice-soft); }
+  .shift__from .label { color: var(--ice-soft); }
+  .shift__to { border: 2px solid var(--amber); background: linear-gradient(160deg, rgba(242, 169, 59, .16), rgba(242, 169, 59, .04)); box-shadow: 0 0 40px rgba(242, 169, 59, .18); }
+  .shift__to .label { color: var(--amber); }
+  .shift__arrow { display: grid; place-items: center; color: var(--amber); }
+  .shift__arrow svg { width: 40px; height: 40px; transform: rotate(90deg); }
+  @media (min-width: 760px) {
+    .shift { grid-template-columns: 1fr auto 1fr; align-items: center; }
+    .shift__card { height: 100%; }
+    .shift__arrow svg { transform: none; width: 48px; height: 48px; }
+  }
+  .frame-cols { display: grid; gap: clamp(32px, 6vw, 64px); }
+  @media (min-width: 900px) { .frame-cols { grid-template-columns: 1fr 1fr; } }
+  .frame-cols h3 { color: var(--ice); }
+  .frame-cols p { color: var(--ice-soft); }
+  .pull {
+    margin: 1.4em 0 0; padding: 18px 20px; border-radius: 16px;
+    background: var(--amber-wash); border-left: 4px solid var(--amber);
+    font-family: var(--font-head); font-weight: 700; font-size: clamp(1.15rem, 4vw, 1.4rem); line-height: 1.35;
+  }
+  .frame-cols .pull { color: var(--ice); }
+
+  /* ---------- Demands ---------- */
+  .demands { display: grid; gap: clamp(20px, 4vw, 32px); }
+  .demand { padding: clamp(22px, 5vw, 44px); transition: border-color .3s ease, box-shadow .3s ease; scroll-margin-top: calc(var(--nav-h) + 16px); }
+  .demand:hover, .demand:focus-within { border-color: rgba(242, 169, 59, .55); box-shadow: 0 0 36px rgba(242, 169, 59, .14); }
+  .demand__head { display: flex; align-items: center; gap: 18px; margin-bottom: 20px; }
+  .demand__head .door { --door-w: 56px; }
+  .demand__kicker { font-family: var(--font-head); font-weight: 700; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin: 0 0 .3em; }
+  .demand h3 { margin: 0; font-size: clamp(1.6rem, 6vw, 2.2rem); }
+  .demand__call {
+    font-size: clamp(1.1rem, 3.8vw, 1.28rem); font-weight: 600; line-height: 1.55; color: var(--ice);
+    padding-left: 16px; border-left: 3px solid var(--amber); margin-bottom: 1.3em;
+  }
+  .demand__body p { color: var(--ice-soft); }
+  .demand__meta { display: grid; gap: 14px; margin: 1.4em 0 0; padding-top: 1.2em; border-top: 1px solid var(--ice-line); }
+  .demand__meta div { display: grid; gap: 4px; }
+  .demand__meta dt { font-family: var(--font-head); font-weight: 700; font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ice-soft); }
+  .demand__meta dd { margin: 0; }
+  .demand__cta { margin-top: 18px; }
+  @media (min-width: 860px) {
+    .demand { display: grid; grid-template-columns: 120px 1fr; column-gap: 36px; }
+    .demand__head { grid-column: 1 / -1; }
+    .demand__head .door { --door-w: 72px; }
+    .demand > :not(.demand__head) { grid-column: 2; }
+    .demand__meta { grid-template-columns: 1fr 1fr; }
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: .82rem; font-weight: 600; line-height: 1.2;
+    padding: 6px 12px; border-radius: 999px; background: rgba(230, 241, 244, .08); border: 1px solid var(--ice-line);
+  }
+  .chip svg { width: 15px; height: 15px; }
+  .chip--hub { border-color: rgba(242, 169, 59, .7); background: rgba(242, 169, 59, .12); }
+
+  /* ---------- Icons ---------- */
+  .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+
+  /* ---------- Watch ---------- */
+  .video-frame { padding: 10px; }
+  .video-frame__inner { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--navy-deeper); }
+  .video-frame video { width: 100%; height: 100%; object-fit: contain; background: var(--navy-deeper); }
+  .placeholder {
+    position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 10px; padding: 20px; text-align: center; color: var(--ice);
+    background:
+      radial-gradient(50% 70% at 50% 60%, rgba(242, 169, 59, .2), transparent 70%),
+      linear-gradient(180deg, var(--navy-deeper), var(--navy));
+  }
+  .placeholder .door { --door-w: clamp(40px, 9vw, 64px); --door-fill: var(--amber); }
+  .section--ice .placeholder .door { --door-stroke: var(--amber); --door-fill: var(--amber); --door-floor: rgba(230, 241, 244, .38); }
+  .placeholder .door svg { filter: drop-shadow(0 0 14px rgba(242, 169, 59, .6)); }
+  .placeholder__title { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.05rem, 3.6vw, 1.4rem); margin: 6px 0 0; }
+  .placeholder__text { max-width: 44ch; font-size: clamp(.85rem, 2.8vw, 1rem); color: var(--ice-soft); margin: 0; }
+  @media (max-width: 480px) { .video-frame__inner.is-missing { aspect-ratio: 4 / 4.2; } }
+
+  .tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--font-head); font-weight: 700; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 999px; border: 1px solid rgba(242, 169, 59, .7); color: var(--amber); background: rgba(242, 169, 59, .08);
+  }
+  .section--ice .tag { color: var(--navy); border-color: var(--navy); background: rgba(31, 58, 95, .06); }
+
+  /* ---------- Say One Hello ---------- */
+  .hello { display: grid; gap: clamp(28px, 5vw, 48px); align-items: start; }
+  @media (min-width: 960px) { .hello { grid-template-columns: .9fr 1.1fr; } .hello__side { grid-row: 1 / span 2; } }
+  .counter { padding: clamp(18px, 4.5vw, 32px); }
+  .counter__top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 18px; }
+  .counter__top h3 { margin: 0; font-size: 1.2rem; }
+  .weeks { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0 0 22px; }
+  @media (min-width: 560px) { .weeks { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+  .week {
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    min-height: 88px; padding: 12px 4px 10px; border-radius: 14px; cursor: pointer;
+    background: rgba(230, 241, 244, .05); border: 1px solid var(--ice-line);
+    transition: background-color .25s ease, border-color .25s ease, box-shadow .25s ease, transform .2s ease;
+    -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+  }
+  .week .door { --door-w: 34px; }
+  .week__label { font-size: .78rem; font-weight: 600; color: var(--ice-soft); line-height: 1.1; }
+  .week:hover, .week:focus-visible { border-color: rgba(242, 169, 59, .7); box-shadow: 0 0 20px rgba(242, 169, 59, .25); }
+  .week[aria-pressed="true"] { background: rgba(242, 169, 59, .14); border-color: var(--amber); box-shadow: 0 0 22px rgba(242, 169, 59, .3); }
+  .week[aria-pressed="true"] .week__label { color: var(--ice); }
+  @media (prefers-reduced-motion: no-preference) { .week.pop { animation: pop .35s ease; } }
+  @keyframes pop { 40% { transform: scale(1.07); } 100% { transform: scale(1); } }
+
+  .counter__status { margin-bottom: 18px; }
+  .counter__count { font-family: var(--font-head); font-weight: 700; font-size: clamp(1.5rem, 5vw, 1.9rem); margin: 0 0 10px; }
+  .counter__count strong { color: var(--amber); }
+  .bar { height: 12px; border-radius: 999px; background: rgba(230, 241, 244, .12); overflow: hidden; }
+  .bar__fill { height: 100%; width: 0; border-radius: inherit; background: linear-gradient(90deg, rgba(242, 169, 59, .75), var(--amber)); box-shadow: 0 0 14px rgba(242, 169, 59, .6); transition: width .5s cubic-bezier(.2, .7, .2, 1); }
+  .counter__msg { margin: 14px 0 0; font-size: 1.02rem; }
+  .counter__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 16px; border-top: 1px solid var(--ice-line); }
+  .counter__foot p { margin: 0; font-size: .88rem; color: var(--ice-soft); }
+  .confirm { margin-top: 14px; padding: 16px; border-radius: 14px; background: rgba(242, 169, 59, .1); border: 1px solid rgba(242, 169, 59, .55); }
+  .confirm p { margin: 0 0 12px; font-weight: 600; }
+  .notice { margin-top: 14px; padding: 12px 14px; border-radius: 12px; border: 1px dashed rgba(230, 241, 244, .4); font-size: .9rem; color: var(--ice-soft); }
+
+  details.starters { padding: 0; overflow: hidden; }
+  details.starters summary {
+    list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    padding: 18px 20px; font-family: var(--font-head); font-weight: 700; font-size: 1.02rem; border-radius: var(--radius);
+  }
+  details.starters summary::-webkit-details-marker { display: none; }
+  details.starters summary:hover { color: var(--amber); }
+  details.starters summary .chev { width: 22px; height: 22px; transition: transform .25s ease; color: var(--amber); }
+  details.starters[open] summary .chev { transform: rotate(180deg); }
+  .starters ol { margin: 0; padding: 0 20px 20px 20px; list-style: none; counter-reset: s; display: grid; gap: 12px; }
+  .starters li { counter-increment: s; display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; }
+  .starters li::before {
+    content: counter(s); display: grid; place-items: center; width: 32px; height: 32px; border-radius: 10px;
+    background: var(--amber-wash); border: 1px solid rgba(242, 169, 59, .6); color: var(--amber);
+    font-family: var(--font-head); font-weight: 700; font-size: .9rem;
+  }
+  .live { margin-top: 18px; padding: 20px; border: 1px dashed rgba(242, 169, 59, .6); border-radius: var(--radius); display: flex; gap: 16px; align-items: flex-start; }
+  .live__doors { display: flex; gap: 3px; flex: none; padding-top: 4px; }
+  .live__doors .door { --door-w: 16px; --door-fill: rgba(242, 169, 59, .3); }
+  .live p { margin: 0; }
+  .live strong { display: block; font-family: var(--font-head); margin-bottom: 4px; }
+
+  /* ---------- Tell It Your Way ---------- */
+  .tell { display: grid; gap: clamp(24px, 4vw, 40px); align-items: start; }
+  @media (min-width: 960px) { .tell { grid-template-columns: .8fr 1.2fr; } }
+  .rules { padding: clamp(20px, 4vw, 30px); }
+  .rules h3 { font-size: 1.3rem; }
+  .rules ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .rules li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; }
+  .rules li .icon { color: var(--amber); width: 26px; height: 26px; margin-top: 1px; }
+  .rules__privacy { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--ice-line); font-size: .92rem; color: var(--ice-soft); }
+
+  .story-form { padding: clamp(20px, 4vw, 32px); }
+  .field { margin-bottom: 22px; }
+  .field > label, .field legend { display: block; font-family: var(--font-head); font-weight: 700; font-size: 1rem; margin-bottom: 4px; padding: 0; }
+  .hint { display: block; font-size: .88rem; color: var(--ice-soft); margin-bottom: 10px; }
+  fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+  .input {
+    width: 100%; min-height: 50px; padding: .7em .9em; border-radius: 12px;
+    background: var(--ice); color: var(--navy-deeper); border: 2px solid transparent;
+    transition: box-shadow .2s ease, border-color .2s ease;
+  }
+  textarea.input { min-height: 150px; resize: vertical; line-height: 1.55; }
+  .input:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; box-shadow: 0 0 22px rgba(242, 169, 59, .35); }
+  .input[aria-invalid="true"] { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(242, 169, 59, .35); }
+  .input::placeholder { color: rgba(31, 58, 95, .7); }
+  .char-count { display: block; text-align: right; font-size: .8rem; color: var(--ice-soft); margin-top: 6px; }
+  .formats { display: flex; flex-wrap: wrap; gap: 8px; }
+  .format { position: relative; }
+  .format input { position: absolute; opacity: 0; inset: 0; width: 100%; height: 100%; margin: 0; cursor: pointer; }
+  .format span {
+    display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 8px 14px; border-radius: 999px;
+    border: 1px solid rgba(230, 241, 244, .4); background: rgba(230, 241, 244, .05); font-weight: 600; font-size: .95rem;
+    transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease, color .2s ease;
+  }
+  .format span .icon { width: 18px; height: 18px; }
+  .format input:hover + span { border-color: var(--amber); box-shadow: 0 0 16px rgba(242, 169, 59, .25); }
+  .format input:checked + span { background: var(--amber); border-color: var(--amber); color: var(--navy-deeper); }
+  .format input:focus-visible + span { outline: 3px solid var(--amber); outline-offset: 3px; box-shadow: var(--glow); }
+  .media-note { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 12px; padding: 12px 14px; border-radius: 12px; border: 1px dashed rgba(242, 169, 59, .6); background: rgba(242, 169, 59, .07); font-size: .9rem; }
+  .media-note .icon { color: var(--amber); width: 20px; height: 20px; margin-top: 2px; }
+  .consent { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; padding: 16px; border-radius: 14px; background: rgba(230, 241, 244, .05); border: 1px solid var(--ice-line); cursor: pointer; }
+  .consent input { width: 24px; height: 24px; margin: 2px 0 0; accent-color: var(--amber); cursor: pointer; }
+  .consent.is-invalid { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(242, 169, 59, .3); }
+  .required { color: var(--amber); font-size: .82rem; font-weight: 600; margin-left: 6px; }
+  .field-error { display: flex; gap: 8px; align-items: flex-start; color: var(--amber); font-weight: 600; font-size: .92rem; margin: 8px 0 0; }
+  .field-error .icon { width: 18px; height: 18px; margin-top: 3px; }
+  .form-foot { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; }
+  .form-foot p { margin: 0; font-size: .88rem; color: var(--ice-soft); }
+
+  .wall-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; margin: clamp(48px, 8vw, 80px) 0 20px; }
+  .wall-head h3 { margin: 0; font-size: clamp(1.5rem, 5vw, 2rem); }
+  .wall-head p { margin: 6px 0 0; color: var(--ice-soft); font-size: .95rem; max-width: 52ch; }
+  .wall { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 16px; list-style: none; margin: 0; padding: 0; }
+  .story-card { display: flex; flex-direction: column; gap: 12px; padding: 20px; height: 100%; }
+  .story-card:focus { outline: 3px solid var(--amber); outline-offset: 3px; }
+  .story-card__head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .story-card__format { display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-head); font-weight: 700; font-size: .95rem; }
+  .story-card__format .icon { color: var(--amber); }
+  .story-card__text { margin: 0; white-space: pre-line; overflow-wrap: anywhere; }
+  .story-card__lang { margin: 0; font-size: .85rem; color: var(--ice-soft); overflow-wrap: anywhere; }
+  .story-card__foot { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--ice-line); font-size: .85rem; color: var(--ice-soft); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
+  .story-card--example { border-style: dashed; background: rgba(230, 241, 244, .03); }
+  .story-card--example .story-card__text { font-style: italic; color: var(--ice-soft); }
+  .story-card--mine { border: 2px solid var(--amber); box-shadow: 0 0 30px rgba(242, 169, 59, .2); background: linear-gradient(160deg, rgba(242, 169, 59, .12), rgba(230, 241, 244, .03)); }
+  .story-card--mine .story-card__name { color: var(--ice); font-weight: 600; overflow-wrap: anywhere; }
+  .media-ph { display: flex; align-items: center; gap: 10px; padding: 14px; border-radius: 12px; background: rgba(14, 31, 51, .6); border: 1px dashed rgba(230, 241, 244, .35); font-size: .88rem; color: var(--ice-soft); }
+  .media-ph .icon { color: var(--amber); }
+  @media (prefers-reduced-motion: no-preference) { .story-card--new { animation: rise .5s cubic-bezier(.2, .7, .2, 1); } }
+  @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+  /* ---------- Toolkit ---------- */
+  .toolkit { display: grid; gap: clamp(32px, 5vw, 56px); align-items: start; }
+  @media (min-width: 900px) { .toolkit { grid-template-columns: minmax(280px, .8fr) 1.2fr; } .poster-figure { position: sticky; top: calc(var(--nav-h) + 24px); } }
+  .poster-figure { margin: 0; max-width: 440px; justify-self: center; width: 100%; }
+  .poster-frame { position: relative; aspect-ratio: 1055 / 1491; border-radius: 18px; overflow: hidden; background: var(--navy); box-shadow: 0 24px 60px rgba(14, 31, 51, .3), 0 0 0 1px rgba(31, 58, 95, .2); }
+  .poster-frame img { width: 100%; height: 100%; object-fit: cover; }
+  .poster-figure figcaption { margin-top: 12px; font-size: .9rem; text-align: center; }
+  .tools { display: grid; gap: 14px; list-style: none; margin: 0; padding: 0; }
+  @media (min-width: 620px) { .tools { grid-template-columns: 1fr 1fr; } .tool--wide { grid-column: 1 / -1; } }
+  .tool { padding: 22px 20px; border-radius: 18px; background: rgba(31, 58, 95, .06); border: 1px solid rgba(31, 58, 95, .2); transition: box-shadow .3s ease, border-color .3s ease; }
+  .tool:hover { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(242, 169, 59, .3), 0 10px 30px rgba(31, 58, 95, .12); }
+  .tool h3 { font-size: 1.15rem; margin-bottom: .4em; display: flex; align-items: center; gap: 10px; }
+  .tool h3 .icon { width: 24px; height: 24px; }
+  .tool p { margin-bottom: 14px; font-size: .98rem; }
+  .tool__links { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+  .tool__links .door { --door-w: 22px; }
+  .tool__links .door .door__num { font-size: 10px; }
+  .tool__links .label { margin-right: 4px; }
+
+  /* ---------- Final call ---------- */
+  .final {
+    text-align: center; overflow: hidden;
+    background:
+      radial-gradient(55% 55% at 50% 45%, rgba(242, 169, 59, .2), transparent 70%),
+      linear-gradient(180deg, var(--navy), var(--navy-deeper));
+  }
+  .final .door { --door-w: 64px; --door-fill: var(--amber); margin: 0 auto 28px; }
+  .final .door svg { filter: drop-shadow(0 0 22px rgba(242, 169, 59, .75)); }
+  .final__text { max-width: 40ch; margin: 0 auto; }
+  .final__text p { font-size: clamp(1.12rem, 3.8vw, 1.35rem); line-height: 1.6; }
+  .final__slogan { margin: clamp(40px, 7vw, 64px) 0 36px; }
+  .final__slogan .slogan__main { font-size: clamp(2.2rem, 10vw, 4.4rem); }
+  .final__slogan .slogan__sub { font-size: clamp(1.2rem, 4.6vw, 1.8rem); }
+  .final .btn-row { justify-content: center; }
+
+  /* ---------- References & footer ---------- */
+  .refs { list-style: none; margin: 0 0 clamp(40px, 7vw, 64px); padding: 0; display: grid; gap: 18px; }
+  .refs li { padding-left: 2.2em; text-indent: -2.2em; overflow-wrap: anywhere; line-height: 1.6; }
+  .refs a { color: var(--navy); text-decoration-thickness: 1px; }
+  .refs a:hover { text-decoration-color: var(--amber); text-decoration-thickness: 3px; }
+  .declaration { padding: clamp(20px, 4vw, 30px); border: 2px dashed var(--navy); border-radius: var(--radius); background: rgba(31, 58, 95, .05); }
+  .declaration h2 { font-size: clamp(1.3rem, 4.6vw, 1.6rem); }
+  .declaration p { margin: 0; font-weight: 600; }
+  .site-footer { background: var(--navy-deeper); padding-block: 36px; text-align: center; font-size: .92rem; color: var(--ice-soft); }
+  .site-footer p { margin: 0; }
+  .site-footer .door { --door-w: 20px; --door-fill: var(--amber); margin: 0 auto 12px; }
+
+  /* ---------- Scroll reveal ---------- */
+  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1); }
+  .js .reveal.is-visible { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+  }
+</style>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Shared SVG symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-door" viewBox="0 0 32 40">
+      <path d="M8.5 37V9.5A1.5 1.5 0 0 1 10 8h12a1.5 1.5 0 0 1 1.5 1.5V37Z" style="fill:var(--door-fill)"/>
+      <path d="M5.5 38V7a3 3 0 0 1 3-3h15a3 3 0 0 1 3 3v31" style="fill:none;stroke:var(--door-stroke);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"/>
+      <path d="M1.5 38.5h29" style="fill:none;stroke:var(--door-floor);stroke-width:2;stroke-linecap:round"/>
+    </symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 6h14M5 11h14M5 16h9"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="2"/><path d="m21 15.5-5-5L7 19"/></symbol>
+    <symbol id="i-voice" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3z"/></symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4h13A1.5 1.5 0 0 1 20 5.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-5 4v-4.2A1.5 1.5 0 0 1 4 14.5z"/><path d="M8 8.5h8M8 11.8h5"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m7.8 12.2 2.9 2.9 5.5-5.6"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 11v5.5M12 7.6v.2"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="m10 8.5 5.5 3.5-5.5 3.5z"/></symbol>
+    <symbol id="i-hand" viewBox="0 0 24 24"><path d="M4 12.5c0-4.5 3.6-8 8-8s8 3.5 8 8-3.6 7-8 7H6l-2 1.5z"/><path d="M9 11.5h.01M15 11.5h.01M9.5 14.5c1.4 1.2 3.6 1.2 5 0"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 15.5h6"/></symbol>
+    <symbol id="i-poster" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M8 7h8M8 10h5"/><rect x="12.5" y="14" width="4" height="4"/></symbol>
+    <symbol id="i-web" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.6 3.9 5.8 3.9 9.5s-1.3 6.9-3.9 9.5c-2.6-2.6-3.9-5.8-3.9-9.5s1.3-6.9 3.9-9.5"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="6" height="6" rx="1"/><rect x="14.5" y="3.5" width="6" height="6" rx="1"/><rect x="3.5" y="14.5" width="6" height="6" rx="1"/><path d="M14.5 14.5h2.5v2.5h-2.5zM18 18h2.5v2.5H18zM14.5 20.5h1M20.5 14.5v1"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 60"><circle cx="12" cy="8" r="7"/><path d="M1.5 60V30.5a10.5 10.5 0 0 1 21 0V60z"/></symbol>
+  </defs>
+</svg>
+
+<header class="site-nav">
+  <div class="container site-nav__inner">
+    <a class="brand" href="#top" aria-label="The Invisible Walls, back to top">
+      <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+      <span class="brand__text">The Invisible Walls</span>
+    </a>
+    <nav aria-label="The five demands">
+      <ol class="nav-doors">
+        <li class="nav-doors__label" aria-hidden="true">Five doors</li>
+        <li><a class="nav-door" href="#demand-1" aria-label="Demand 1: Mix Every Group"><span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span></a></li>
+        <li><a class="nav-door" href="#demand-2" aria-label="Demand 2: Meet Every Week"><span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span></a></li>
+        <li><a class="nav-door" href="#demand-3" aria-label="Demand 3: Lower the Pressure"><span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span></a></li>
+        <li><a class="nav-door" href="#demand-4" aria-label="Demand 4: Say One Hello"><span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span></a></li>
+        <li><a class="nav-door" href="#demand-5" aria-label="Demand 5: Tell It Your Way"><span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span></a></li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">COMMS 106 · University of Auckland</p>
+        <h1 id="hero-title">The Invisible Walls</h1>
+        <p class="hero__subtitle">A Manifesto for Cross-Cultural Belonging at the University of Auckland</p>
+        <p class="slogan">
+          <span class="slogan__main">Step Through the Glass.</span>
+          <span class="slogan__sub">Build Belonging Together.</span>
+        </p>
+        <p class="hero__summary lead">We share lecture theatres, libraries and campus spaces, yet an invisible wall can still keep domestic and international students apart, so here are five practical ways to open a door, together.</p>
+        <div class="btn-row">
+          <a class="btn btn--amber" href="#demands">Read the five demands <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn--ghost" href="#say-hello">Try Say One Hello</a>
+        </div>
+      </div>
+      <div class="hero__art reveal">
+        <svg viewBox="0 0 480 360" role="img" aria-labelledby="hero-art-title" focusable="false">
+          <title id="hero-art-title">A glass wall with an open door of amber light. Identical figures stand on both sides; one is stepping through.</title>
+          <defs>
+            <radialGradient id="g-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#F2A93B" stop-opacity=".5"/>
+              <stop offset=".55" stop-color="#F2A93B" stop-opacity=".14"/>
+              <stop offset="1" stop-color="#F2A93B" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="g-glass" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#E6F1F4" stop-opacity=".2"/>
+              <stop offset="1" stop-color="#E6F1F4" stop-opacity=".05"/>
+            </linearGradient>
+            <linearGradient id="g-door" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F2A93B" stop-opacity=".8"/>
+              <stop offset="1" stop-color="#F2A93B"/>
+            </linearGradient>
+            <linearGradient id="g-spill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#F2A93B" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#F2A93B" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <ellipse class="breathe" cx="232" cy="196" rx="200" ry="160" fill="url(#g-glow)"/>
+          <!-- figures beyond the glass -->
+          <g fill="#E6F1F4" fill-opacity=".32">
+            <use href="#i-person" x="296" y="242" width="18" height="46"/>
+            <use href="#i-person" x="372" y="240" width="18" height="46"/>
+            <use href="#i-person" x="400" y="243" width="18" height="46"/>
+            <use href="#i-person" x="428" y="241" width="18" height="46"/>
+          </g>
+          <!-- glass panes -->
+          <g stroke="#E6F1F4" stroke-opacity=".5" stroke-width="1.3" fill="url(#g-glass)">
+            <rect x="18" y="58" width="90" height="232" rx="3"/>
+            <rect x="112" y="58" width="76" height="232" rx="3"/>
+            <rect x="192" y="58" width="76" height="54" rx="3"/>
+            <rect x="272" y="58" width="76" height="232" rx="3"/>
+            <rect x="352" y="58" width="110" height="232" rx="3"/>
+          </g>
+          <g stroke="#E6F1F4" stroke-opacity=".2" stroke-width="3" stroke-linecap="round">
+            <path d="M32 160 92 88M34 196l40-48"/>
+            <path d="M126 140l48-56"/>
+            <path d="M286 150l48-58"/>
+            <path d="M368 170 446 82M372 206l40-48"/>
+          </g>
+          <!-- the door of light -->
+          <rect class="shimmer" x="196" y="118" width="68" height="172" fill="url(#g-door)"/>
+          <polygon points="192,290 268,290 352,360 108,360" fill="url(#g-spill)"/>
+          <path d="M192 290V124a6 6 0 0 1 6-6h64a6 6 0 0 1 6 6v166" fill="none" stroke="#F2A93B" stroke-width="5" stroke-linejoin="round"/>
+          <polygon points="268,120 302,134 302,280 268,290" fill="#E6F1F4" fill-opacity=".14" stroke="#E6F1F4" stroke-opacity=".55" stroke-width="1.3"/>
+          <line x1="0" y1="290" x2="480" y2="290" stroke="#E6F1F4" stroke-opacity=".22" stroke-width="1.5"/>
+          <!-- figure stepping through -->
+          <use href="#i-person" x="219" y="230" width="22" height="58" fill="#0E1F33"/>
+          <!-- figures on this side -->
+          <g fill="#E6F1F4" fill-opacity=".9">
+            <use href="#i-person" x="48" y="262" width="27" height="70"/>
+            <use href="#i-person" x="90" y="266" width="27" height="70"/>
+            <use href="#i-person" x="132" y="263" width="27" height="70"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. WHY THIS MATTERS -->
+  <section class="section section--ice" id="why" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Context / Background</p>
+        <h2 id="why-title">Why this matters</h2>
+      </div>
+      <div class="narrow reveal">
+        <p class="lead">The University of Auckland is a highly diverse university community. In 2025, it enrolled 49,901 students, including 11,759 overseas students, meaning almost one in four students came from outside New Zealand (University of Auckland, 2026).</p>
+        <p>Yet diversity in numbers does not automatically create meaningful connection. Students from different cultural backgrounds may share lecture theatres, libraries and campus spaces while still remaining socially separated. Differences in language confidence, communication styles, cultural expectations and established friendship groups can create invisible barriers that affect who speaks to whom, who feels comfortable participating, and who feels that they belong.</p>
+        <p>This problem has been recognised in New Zealand research for decades. A Ministry of Education review concluded that having large numbers of international students is not enough to create intercultural interaction or friendship. Instead, contact needs to be deliberately structured through strategies such as peer-pairing and cooperative learning (Ward, 2001). A national survey later found that 70% of international students wanted more New Zealand friends, while around one in three identified language skills as a barrier to forming those friendships (Ward &amp; Masgoret, 2004).</p>
+        <p>This is why our manifesto is not simply about increasing diversity. The University is already diverse. Our aim is to turn diversity into connection, participation and belonging.</p>
+      </div>
+      <ul class="stats" aria-label="Key numbers">
+        <li class="stat reveal">
+          <span class="stat__num">49,901</span>
+          <span class="stat__label">students enrolled at the University of Auckland in 2025</span>
+          <span class="stat__cite">(University of Auckland, 2026)</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__num">11,759</span>
+          <span class="stat__label">overseas students in that community</span>
+          <span class="stat__cite">(University of Auckland, 2026)</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__num">70%</span>
+          <span class="stat__label">of international students wanted more New Zealand friends</span>
+          <span class="stat__cite">(Ward &amp; Masgoret, 2004)</span>
+        </li>
+        <li class="stat reveal">
+          <span class="stat__pre">About</span>
+          <span class="stat__num">1 in 3</span>
+          <span class="stat__label">international students found language skills a barrier to making New Zealand friends</span>
+          <span class="stat__cite">(Ward &amp; Masgoret, 2004)</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. OUR FRAME -->
+  <section class="section" id="frame" aria-labelledby="frame-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">An ethic of care</p>
+        <h2 id="frame-title">Our frame</h2>
+      </div>
+      <div class="shift reveal" role="group" aria-label="The shift our manifesto asks for">
+        <div class="shift__card shift__from">
+          <span class="label">From</span>
+          <p>Sharing a space = connection</p>
+        </div>
+        <div class="shift__arrow" aria-hidden="true"><svg class="icon" focusable="false"><use href="#i-arrow"/></svg></div>
+        <div class="shift__card shift__to">
+          <span class="label">To</span>
+          <p>Belonging must be built together</p>
+        </div>
+      </div>
+      <div class="frame-cols">
+        <div class="reveal">
+          <h3>Narrative / Frame</h3>
+          <p>Our manifesto challenges a common narrative: if students from different cultural backgrounds share the same campus, meaningful integration will happen naturally.</p>
+          <p>We reframe the issue through the idea that belonging must be built together. Cross-cultural integration should not be treated as something international students must achieve by learning how to “fit in”. Domestic students, international students, lecturers, student organisations and the University all share responsibility for creating opportunities for connection.</p>
+          <p>Our frame is based on an ethic of care. Rather than blaming students for remaining within familiar groups, we focus on making interaction easier, safer and more meaningful. This shifts the issue from individual adaptation to collective responsibility.</p>
+        </div>
+        <div class="reveal">
+          <h3>Values and Emotions</h3>
+          <p>Our manifesto is built around the values of belonging, empathy, inclusion, community and interconnection. We want a university where students do not simply share the same physical space, but feel recognised and connected to people from different backgrounds.</p>
+          <p>The emotions we aim to activate are hope, empathy, solidarity and optimism. We deliberately avoid guilt, blame and fear. Instead, we want students to feel capable of creating change through realistic actions such as meeting someone new, joining a regular group, speaking in a lower-pressure environment, saying hello or sharing a story.</p>
+          <p class="pull">Belonging should feel possible, shared and worth building.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. THE FIVE DEMANDS -->
+  <section class="section section--deeper" id="demands" aria-labelledby="demands-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Five doors through the glass</p>
+        <h2 id="demands-title">The five demands</h2>
+        <p class="muted">Each door is one practical action, with the people who can make it happen.</p>
+      </div>
+      <div class="demands">
+
+        <article class="demand glass reveal" id="demand-1" aria-labelledby="demand-1-title">
+          <div class="demand__head">
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span>
+            <div><p class="demand__kicker">Demand 1</p><h3 id="demand-1-title">Mix Every Group</h3></div>
+          </div>
+          <p class="demand__call">We call on course coordinators to form mixed domestic–international groups for at least one group assignment in every course, and to publish the group lists in the course outline.</p>
+          <div class="demand__body">
+            <p>Students often remain within familiar social and cultural circles. Structured group work creates opportunities to interact with people they might not otherwise approach. Research reviewed by the New Zealand Ministry of Education suggests that cooperative learning can increase intercultural contact and reduce negative stereotypes between domestic and international students (Ward, 2001). A mixed group may not automatically create friendship, but it can open the first door.</p>
+          </div>
+          <dl class="demand__meta">
+            <div><dt>Who acts</dt><dd>Course coordinators</dd></div>
+            <div><dt>Where it appears</dt><dd><ul class="chips"><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Video</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage</li></ul></dd></div>
+          </dl>
+        </article>
+
+        <article class="demand glass reveal" id="demand-2" aria-labelledby="demand-2-title">
+          <div class="demand__head">
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span>
+            <div><p class="demand__kicker">Demand 2</p><h3 id="demand-2-title">Meet Every Week</h3></div>
+          </div>
+          <p class="demand__call">We call on AUSA and student programmes such as International Buddies and UniGuide to run small groups that meet weekly, with the same members, for the whole semester. Genuine connection needs repeated interaction, not just one-off events.</p>
+          <div class="demand__body">
+            <p>One orientation event can introduce people, but relationships need time to develop. Repeated interaction allows students to move beyond first impressions, become more comfortable with one another and build trust.</p>
+            <p>New Zealand research has also highlighted the value of peer-pairing and structured contact in supporting interaction between domestic and international students (Ward, 2001).</p>
+            <p>Connection needs continuity.</p>
+          </div>
+          <dl class="demand__meta">
+            <div><dt>Who acts</dt><dd>AUSA and student programmes such as International Buddies and UniGuide</dd></div>
+            <div><dt>Where it appears</dt><dd><ul class="chips"><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Video</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage</li></ul></dd></div>
+          </dl>
+        </article>
+
+        <article class="demand glass reveal" id="demand-3" aria-labelledby="demand-3-title">
+          <div class="demand__head">
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span>
+            <div><p class="demand__kicker">Demand 3</p><h3 id="demand-3-title">Lower the Pressure</h3></div>
+          </div>
+          <p class="demand__call">We call on lecturers and tutors to build at least one low-pressure way to participate into every tutorial, such as pair discussions, written responses, or digital chat options. Language confidence should not decide who gets to speak and belong.</p>
+          <div class="demand__body">
+            <p>Participation should not depend on who speaks the fastest or feels most confident in English. A national survey found that around one-third of international students identified language skills as a barrier to making New Zealand friends (Ward &amp; Masgoret, 2004).</p>
+            <p>Pair discussions, written responses and digital options give students more ways to contribute. A pause, an accent, or imperfect English should never make someone feel invisible.</p>
+          </div>
+          <dl class="demand__meta">
+            <div><dt>Who acts</dt><dd>Lecturers and tutors</dd></div>
+            <div><dt>Where it appears</dt><dd><ul class="chips"><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Video</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage</li></ul></dd></div>
+          </dl>
+        </article>
+
+        <article class="demand glass reveal" id="demand-4" aria-labelledby="demand-4-title">
+          <div class="demand__head">
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span>
+            <div><p class="demand__kicker">Demand 4</p><h3 id="demand-4-title">Say One Hello</h3></div>
+          </div>
+          <p class="demand__call">We challenge every student to start at least one conversation each week with someone from a different cultural background, and to tick it off on our webpage counter. Small actions can make cross-cultural connection feel more normal, visible, and achievable.</p>
+          <div class="demand__body">
+            <p>Institutions can create opportunities, but students also shape campus culture through everyday choices. A national New Zealand survey found that 70% of international students wanted more New Zealand friends (Ward &amp; Masgoret, 2004). The desire for connection already exists; sometimes what is missing is the first step.</p>
+            <p>You do not need to change the whole campus today. Start with one person.</p>
+          </div>
+          <dl class="demand__meta">
+            <div><dt>Who acts</dt><dd>Every student</dd></div>
+            <div><dt>Where it appears</dt><dd><ul class="chips"><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Video</li><li class="chip chip--hub"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage: counter</li></ul></dd></div>
+          </dl>
+          <div class="demand__cta"><a class="btn btn--amber btn--small" href="#say-hello">Open the counter <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+        </article>
+
+        <article class="demand glass reveal" id="demand-5" aria-labelledby="demand-5-title">
+          <div class="demand__head">
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            <div><p class="demand__kicker">Demand 5</p><h3 id="demand-5-title">Tell It Your Way</h3></div>
+          </div>
+          <p class="demand__call">We invite every student, especially international students, to share one story in the format they choose (text, photo, voice, video, or another language). We call on the University and AUSA to host these stories only with the storyteller’s consent, so they keep control over what is shared.</p>
+          <div class="demand__body">
+            <p>Statistics can describe diversity, but they cannot fully show what belonging, exclusion or connection feels like.</p>
+            <p>Personal stories allow students to describe these experiences in their own way. Giving students control over the format, language and content of their stories creates space for different voices rather than speaking for them.</p>
+            <p>Different voices. Different stories. One shared campus.</p>
+          </div>
+          <dl class="demand__meta">
+            <div><dt>Who acts</dt><dd>Every student, especially international students; the University and AUSA</dd></div>
+            <div><dt>Where it appears</dt><dd><ul class="chips"><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</li><li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Video</li><li class="chip chip--hub"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage: story wall</li></ul></dd></div>
+          </dl>
+          <div class="demand__cta"><a class="btn btn--amber btn--small" href="#tell-it">Open the story wall <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WATCH -->
+  <section class="section section--navy" id="watch" aria-labelledby="watch-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">The animation</p>
+        <h2 id="watch-title">Watch</h2>
+        <p class="muted">From one to many: the five demands appear as five doors.</p>
+      </div>
+      <div class="video-frame glass reveal">
+        <div class="video-frame__inner" id="video-wrap">
+          <video id="manifesto-video" controls playsinline preload="metadata" aria-label="The Invisible Walls manifesto animation">
+            Your browser can’t play this video.
+          </video>
+          <div class="placeholder" id="video-placeholder" hidden>
+            <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+            <p class="placeholder__title">Our animation is on its way</p>
+            <p class="placeholder__text">It tells the “from one to many” story: the five demands appear as five doors.</p>
+            <span class="tag">Prototype: video not added yet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. SAY ONE HELLO -->
+  <section class="section section--deeper" id="say-hello" aria-labelledby="hello-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Demand 4 · Try it</p>
+        <h2 id="hello-title">Say One Hello</h2>
+        <p class="lead muted">Each week you start a conversation with someone from a different cultural background, tick that week’s door. Any week is a good week to begin.</p>
+      </div>
+
+      <div class="hello">
+        <div class="counter glass reveal" aria-labelledby="counter-title">
+          <div class="counter__top">
+            <h3 id="counter-title">My semester of hellos</h3>
+            <span class="tag">Prototype: your ticks are saved on this device only</span>
+          </div>
+
+          <div class="weeks" id="weeks" role="group" aria-label="Semester weeks. Tap a week to tick it."></div>
+
+          <div class="counter__status" id="hello-status" aria-live="polite" aria-atomic="true">
+            <p class="counter__count"><strong id="hello-count">0</strong> of <span data-config="weeks">12</span> weeks</p>
+            <div class="bar" role="progressbar" id="hello-bar" aria-label="Weeks with a hello" aria-valuemin="0" aria-valuemax="12" aria-valuenow="0"><div class="bar__fill" id="hello-bar-fill"></div></div>
+            <p class="counter__msg" id="hello-msg">Your first hello opens the first door. Pick any week: there’s no wrong time to start.</p>
+          </div>
+
+          <div class="counter__foot">
+            <p>Missed a week? That’s okay. Every door can still open.</p>
+            <button type="button" class="btn btn--ghost btn--small" id="reset-btn">Reset my ticks</button>
+          </div>
+          <div class="confirm" id="reset-confirm" hidden>
+            <p id="reset-q">Clear all your ticks on this device?</p>
+            <div class="btn-row">
+              <button type="button" class="btn btn--amber btn--small" id="reset-yes" aria-describedby="reset-q">Yes, clear them</button>
+              <button type="button" class="btn btn--ghost btn--small" id="reset-no">Keep my ticks</button>
+            </div>
+          </div>
+          <p class="notice" id="storage-notice" hidden>Your browser isn’t letting this page save right now, so your ticks will clear when you leave. Everything else still works.</p>
+        </div>
+
+        <div class="hello__side">
+          <details class="starters glass reveal">
+            <summary>Need a starter? Three ideas <svg class="icon chev" aria-hidden="true" focusable="false"><use href="#i-down"/></svg></summary>
+            <ol>
+              <li>Ask how someone likes their name pronounced, and use it.</li>
+              <li>Ask what they’re working on this week.</li>
+              <li>Sit next to someone new in a lecture or tutorial and say hi.</li>
+            </ol>
+          </details>
+          <div class="live reveal" role="note">
+            <span class="live__doors" aria-hidden="true">
+              <span class="door"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+              <span class="door"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+              <span class="door"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+            </span>
+            <p><strong>Campus-wide total</strong>In a live version, the University and AUSA would show the campus-wide total here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. TELL IT YOUR WAY -->
+  <section class="section section--navy" id="tell-it" aria-labelledby="tell-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Demand 5 · Try it</p>
+        <h2 id="tell-title">Tell It Your Way</h2>
+        <p class="lead muted">A story wall built on consent. Try the form below to see how sharing would work.</p>
+      </div>
+
+      <div class="tell">
+        <aside class="rules glass reveal" aria-labelledby="rules-title">
+          <h3 id="rules-title">Your story, your rules</h3>
+          <ul>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>You choose the format:</strong> text, photo, voice, video, or another language.</span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>You control what is shared.</strong> Nothing appears without your consent.</span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>Anonymous by default.</strong> Leave the name blank and no name is shown.</span></li>
+            <li><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-check"/></svg><span><strong>You can withdraw at any time.</strong> Your story comes down when you ask.</span></li>
+          </ul>
+          <p class="rules__privacy">We never ask for your nationality, ethnicity, student ID or other identifying details.</p>
+        </aside>
+
+        <form class="story-form glass reveal" id="story-form" novalidate aria-labelledby="form-title">
+          <h3 id="form-title" class="sr-only">Share a story</h3>
+          <fieldset class="field">
+            <legend>Format</legend>
+            <span class="hint" id="format-hint">Choose how you want to tell it.</span>
+            <div class="formats" role="presentation">
+              <label class="format"><input type="radio" name="format" value="text" checked aria-describedby="format-hint"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-text"/></svg>Text</span></label>
+              <label class="format"><input type="radio" name="format" value="photo"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg>Photo</span></label>
+              <label class="format"><input type="radio" name="format" value="voice"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-voice"/></svg>Voice</span></label>
+              <label class="format"><input type="radio" name="format" value="video"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg>Video</span></label>
+              <label class="format"><input type="radio" name="format" value="language"><span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lang"/></svg>Another language</span></label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="story-language">Language</label>
+            <span class="hint" id="language-hint">Optional. Any language, written however you like.</span>
+            <input class="input" type="text" id="story-language" name="language" maxlength="60" autocomplete="off" aria-describedby="language-hint">
+          </div>
+
+          <div class="field">
+            <label for="story-text" id="story-label">Your story</label>
+            <span class="hint" id="story-hint">Write it however feels right for you.</span>
+            <div class="media-note" id="media-note" hidden>
+              <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg>
+              <span id="media-note-text">In a live version, you would upload your file here. For this prototype, add a short caption instead.</span>
+            </div>
+            <textarea class="input" id="story-text" name="story" rows="5" required aria-required="true" aria-describedby="story-hint story-count"></textarea>
+            <span class="char-count" id="story-count" aria-live="off">0 / 600</span>
+            <p class="field-error" id="story-error" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><span></span></p>
+          </div>
+
+          <div class="field">
+            <label for="story-name">Display name</label>
+            <span class="hint" id="name-hint">Optional. Leave blank to stay anonymous.</span>
+            <input class="input" type="text" id="story-name" name="displayName" maxlength="40" autocomplete="off" aria-describedby="name-hint">
+          </div>
+
+          <div class="field">
+            <label class="consent" id="consent-box" for="story-consent">
+              <input type="checkbox" id="story-consent" name="consent" required aria-required="true">
+              <span>I consent to share this story on the wall and understand I can ask for it to be removed<span class="required">(required)</span></span>
+            </label>
+            <p class="field-error" id="consent-error" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-info"/></svg><span></span></p>
+          </div>
+
+          <div class="form-foot">
+            <p>Prototype: nothing leaves your device.</p>
+            <button type="submit" class="btn btn--amber">Add my story to the wall</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="wall-head">
+        <div>
+          <h3 id="wall-title" tabindex="-1">The story wall</h3>
+          <p>Format examples are shown below. A story you add appears here for this browser session only and disappears when you reload.</p>
+        </div>
+        <span class="tag">Prototype: nothing leaves your device</span>
+      </div>
+      <p class="sr-only" id="wall-status" aria-live="polite"></p>
+      <ul class="wall" id="wall" aria-labelledby="wall-title">
+        <li><article class="story-card story-card--example glass">
+          <div class="story-card__head"><span class="story-card__format"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-text"/></svg>Text</span><span class="tag">Example</span></div>
+          <p class="story-card__text">Your story, in your words…</p>
+          <p class="story-card__foot">Format example, not a real story</p>
+        </article></li>
+        <li><article class="story-card story-card--example glass">
+          <div class="story-card__head"><span class="story-card__format"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg>Photo</span><span class="tag">Example</span></div>
+          <div class="media-ph"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-photo"/></svg>A photo would appear here</div>
+          <p class="story-card__text">A photo you took, with a caption in your words…</p>
+          <p class="story-card__foot">Format example, not a real story</p>
+        </article></li>
+        <li><article class="story-card story-card--example glass">
+          <div class="story-card__head"><span class="story-card__format"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-voice"/></svg>Voice</span><span class="tag">Example</span></div>
+          <div class="media-ph"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-voice"/></svg>A voice note would play here</div>
+          <p class="story-card__text">A short voice note, told your way…</p>
+          <p class="story-card__foot">Format example, not a real story</p>
+        </article></li>
+        <li><article class="story-card story-card--example glass">
+          <div class="story-card__head"><span class="story-card__format"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg>Video</span><span class="tag">Example</span></div>
+          <div class="media-ph"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-video"/></svg>A short video would play here</div>
+          <p class="story-card__text">A short clip, in your own words…</p>
+          <p class="story-card__foot">Format example, not a real story</p>
+        </article></li>
+        <li><article class="story-card story-card--example glass">
+          <div class="story-card__head"><span class="story-card__format"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-lang"/></svg>Another language</span><span class="tag">Example</span></div>
+          <p class="story-card__text">Your story, in the language you choose…</p>
+          <p class="story-card__foot">Format example, not a real story</p>
+        </article></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 8. OUR TOOLKIT -->
+  <section class="section section--ice" id="toolkit" aria-labelledby="toolkit-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">How it fits together</p>
+        <h2 id="toolkit-title">Our toolkit</h2>
+        <p>Five tools, one campaign. Each one carries the five demands to a different place.</p>
+      </div>
+      <div class="toolkit">
+        <figure class="poster-figure reveal">
+          <div class="poster-frame">
+            <img id="poster-img" width="1055" height="1491" loading="lazy" decoding="async"
+                 alt="Campaign poster. Small heading: The Invisible Walls. Large headline: Step Through the Glass. Build Belonging Together. Students stand in front of a tall glass wall in which one door stands open, glowing with warm amber light; on the other side, other students welcome them. A row of five icons names the demands: Mix Every Group, Meet Every Week, Lower the Pressure, Say One Hello, Tell It Your Way. A closing line reads Same campus. Same table. Bottom right is a space for the QR code.">
+            <div class="placeholder" id="poster-placeholder" hidden>
+              <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+              <p class="placeholder__title">Poster preview</p>
+              <p class="placeholder__text">The poster image couldn’t be loaded here.</p>
+            </div>
+          </div>
+          <figcaption>The poster: its QR code leads here.</figcaption>
+        </figure>
+
+        <ul class="tools">
+          <li class="tool reveal">
+            <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-doc"/></svg>Written manifesto</h3>
+            <p>Carries all five demands as clear calls to action.</p>
+            <div class="tool__links"><span class="label">Demands</span>
+              <span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            </div>
+          </li>
+          <li class="tool reveal">
+            <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-play"/></svg>Animation</h3>
+            <p>Tells the “from one to many” story; the five demands appear as five doors; activates hope and empathy.</p>
+            <div class="tool__links"><span class="label">Demands</span>
+              <span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            </div>
+          </li>
+          <li class="tool reveal">
+            <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-poster"/></svg>Poster</h3>
+            <p>Headlines and slogan in high-traffic campus areas; its QR code leads to this page.</p>
+            <div class="tool__links"><span class="label">Demands</span>
+              <span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            </div>
+          </li>
+          <li class="tool reveal">
+            <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-qr"/></svg>QR code</h3>
+            <p>Moves people from passive viewing to active participation.</p>
+            <div class="tool__links"><span class="label">Demands</span>
+              <span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            </div>
+          </li>
+          <li class="tool tool--wide reveal">
+            <h3><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>Webpage</h3>
+            <p>The hub; hosts the Say One Hello counter (Demand 4) and the story wall (Demand 5).</p>
+            <div class="tool__links"><span class="label">Demands</span>
+              <span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">1</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">2</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">3</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">4</span></span><span class="door"><svg viewBox="0 0 32 40" aria-hidden="true" focusable="false"><use href="#i-door"/></svg><span class="door__num">5</span></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FINAL CALL -->
+  <section class="section final" id="final-call" aria-labelledby="final-title">
+    <div class="container">
+      <span class="door reveal" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+      <p class="eyebrow reveal">Final Call</p>
+      <h2 id="final-title" class="sr-only">Final Call</h2>
+      <div class="final__text reveal">
+        <p>We do not want a university that is diverse only in statistics.</p>
+        <p>We want a university where diversity becomes conversation, understanding, participation, friendship and community.</p>
+        <p>The glass between us may be difficult to see, but it is not permanent. Every mixed group, weekly meeting, safer conversation, hello and shared story creates another way through.</p>
+      </div>
+      <p class="final__slogan reveal">
+        <span class="slogan__main">Step Through the Glass.</span>
+        <span class="slogan__sub">Build Belonging Together.</span>
+      </p>
+      <div class="btn-row reveal">
+        <a class="btn btn--amber" href="#say-hello">Say one hello this week</a>
+        <a class="btn btn--ghost" href="#tell-it">Tell it your way</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. REFERENCES + DECLARATION -->
+  <section class="section section--ice" id="references" aria-labelledby="refs-title">
+    <div class="container narrow">
+      <h2 id="refs-title">References</h2>
+      <ul class="refs">
+        <li>University of Auckland. (2026). <i>Annual report 2025</i>. <a href="https://www.auckland.ac.nz/en/about-us/about-the-university/the-university/official-publications/annual-report.html">https://www.auckland.ac.nz/en/about-us/about-the-university/the-university/official-publications/annual-report.html</a></li>
+        <li>Ward, C. (2001). <i>The impact of international students on domestic students and host institutions</i>. New Zealand Ministry of Education. <a href="https://www.educationcounts.govt.nz/publications/schooling/14684">https://www.educationcounts.govt.nz/publications/schooling/14684</a></li>
+        <li>Ward, C., &amp; Masgoret, A.-M. (2004). <i>The experiences of international students in New Zealand: Report on the results of the national survey</i>. New Zealand Ministry of Education. <a href="https://www.educationcounts.govt.nz/publications/schooling/14700">https://www.educationcounts.govt.nz/publications/schooling/14700</a></li>
+      </ul>
+      <div class="declaration" aria-labelledby="ai-title">
+        <h2 id="ai-title">Declaration of Generative AI Use</h2>
+        <p>To be completed by the group before submission</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
+    <p><span data-config="groupName">[GROUP NAME]</span> · COMMS 106 · University of Auckland</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ===== Everything editable lives here ===== */
+  var CONFIG = {
+    groupName: '[GROUP NAME]',
+    WEEKS: 12,
+    paths: {
+      poster: 'assets/poster.jpg',
+      video: 'assets/manifesto.mp4',
+      videoPoster: 'assets/video-poster.jpg'
+    },
+    storageKey: 'invisible-walls:say-one-hello:v1',
+    storyMaxLength: 600
+  };
+
+  var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
+  var reduceMotion = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+  /* ----- Config-driven text ----- */
+  $$('[data-config="groupName"]').forEach(function (el) { el.textContent = CONFIG.groupName; });
+  $$('[data-config="weeks"]').forEach(function (el) { el.textContent = String(CONFIG.WEEKS); });
+
+  /* ----- Scroll reveal ----- */
+  var revealEls = $$('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    var revealIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealIO.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.01 });
+    revealEls.forEach(function (el) { revealIO.observe(el); });
+  }
+
+  /* ----- Nav doors as progress markers ----- */
+  var navLinks = $$('.nav-door');
+  if ('IntersectionObserver' in window) {
+    var navIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var link = $('.nav-door[href="#' + entry.target.id + '"]');
+        if (!link) return;
+        if (entry.isIntersecting) {
+          navLinks.forEach(function (l) { l.classList.remove('is-current'); l.removeAttribute('aria-current'); });
+          link.classList.add('is-current', 'is-visited');
+          link.setAttribute('aria-current', 'location');
+        } else if (link.classList.contains('is-current')) {
+          link.classList.remove('is-current');
+          link.removeAttribute('aria-current');
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+    $$('.demand').forEach(function (card) { navIO.observe(card); });
+  }
+
+  /* ----- Video with graceful placeholder ----- */
+  (function setupVideo() {
+    var video = $('#manifesto-video');
+    var wrap = $('#video-wrap');
+    var placeholder = $('#video-placeholder');
+    if (!video) return;
+    var failed = false;
+    function showPlaceholder() {
+      if (failed) return;
+      failed = true;
+      try { video.pause(); } catch (e) { /* ignore */ }
+      video.hidden = true;
+      placeholder.hidden = false;
+      wrap.classList.add('is-missing');
+    }
+    if (!video.canPlayType || video.canPlayType('video/mp4') === '') { showPlaceholder(); return; }
+    var source = document.createElement('source');
+    source.type = 'video/mp4';
+    source.addEventListener('error', showPlaceholder);
+    video.addEventListener('error', showPlaceholder);
+    source.src = CONFIG.paths.video;
+    video.appendChild(source);
+    video.load();
+
+    var probe = new Image();
+    probe.onload = function () { if (!failed) video.poster = CONFIG.paths.videoPoster; };
+    probe.onerror = function () { /* no poster: the frame keeps its navy background */ };
+    probe.src = CONFIG.paths.videoPoster;
+  })();
+
+  /* ----- Poster image with placeholder ----- */
+  (function setupPoster() {
+    var img = $('#poster-img');
+    var ph = $('#poster-placeholder');
+    if (!img) return;
+    img.addEventListener('error', function () {
+      img.hidden = true;
+      ph.hidden = false;
+    });
+    img.src = CONFIG.paths.poster;
+  })();
+
+  /* ===== INTERACTIVE 1: Say One Hello ===== */
+  (function setupCounter() {
+    var grid = $('#weeks');
+    if (!grid) return;
+    var WEEKS = CONFIG.WEEKS;
+    var countEl = $('#hello-count');
+    var bar = $('#hello-bar');
+    var fill = $('#hello-bar-fill');
+    var msg = $('#hello-msg');
+    var resetBtn = $('#reset-btn');
+    var confirmBox = $('#reset-confirm');
+    var yesBtn = $('#reset-yes');
+    var noBtn = $('#reset-no');
+    var notice = $('#storage-notice');
+
+    function storageAvailable() {
+      try {
+        var k = '__iw_probe__';
+        window.localStorage.setItem(k, '1');
+        window.localStorage.removeItem(k);
+        return true;
+      } catch (e) { return false; }
+    }
+    function loadTicks() {
+      try {
+        var raw = window.localStorage.getItem(CONFIG.storageKey);
+        if (!raw) return [];
+        var arr = JSON.parse(raw);
+        if (!Array.isArray(arr)) return [];
+        return arr.filter(function (n) { return typeof n === 'number' && n % 1 === 0 && n >= 1 && n <= WEEKS; });
+      } catch (e) { return []; }
+    }
+    function saveTicks(set) {
+      try {
+        var arr = [];
+        set.forEach(function (n) { arr.push(n); });
+        arr.sort(function (a, b) { return a - b; });
+        window.localStorage.setItem(CONFIG.storageKey, JSON.stringify(arr));
+        return true;
+      } catch (e) { return false; }
+    }
+    function clearTicks() {
+      try { window.localStorage.removeItem(CONFIG.storageKey); return true; } catch (e) { return false; }
+    }
+
+    var canStore = storageAvailable();
+    if (!canStore) notice.hidden = false;
+    var ticked = new Set(canStore ? loadTicks() : []);
+
+    for (var w = 1; w <= WEEKS; w++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'week';
+      b.setAttribute('data-week', String(w));
+      b.setAttribute('aria-pressed', 'false');
+      b.innerHTML =
+        '<span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"></use></svg>' +
+        '<span class="door__num">' + w + '</span></span>' +
+        '<span class="week__label">Week ' + w + '<span class="sr-only">: I said one hello this week</span></span>';
+      grid.appendChild(b);
+    }
+    bar.setAttribute('aria-valuemax', String(WEEKS));
+
+    function messageFor(n) {
+      if (n === 0) return 'Your first hello opens the first door. Pick any week: there’s no wrong time to start.';
+      if (n === WEEKS) return 'A hello every week of the semester. You’ve helped build belonging, one person at a time. Thank you.';
+      if (n === 1) return 'One door open. A single hello can change someone’s whole week.';
+      if (n < WEEKS / 2) return 'You’re making hello a habit. Every door you open is another way through the glass.';
+      return 'Look at all that light. Someone on campus feels more at home because you said hello.';
+    }
+
+    function render() {
+      var n = ticked.size;
+      $$('.week', grid).forEach(function (btn) {
+        var wk = Number(btn.getAttribute('data-week'));
+        var on = ticked.has(wk);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.classList.toggle('is-lit', on);
+      });
+      countEl.textContent = String(n);
+      fill.style.width = (n / WEEKS * 100) + '%';
+      bar.setAttribute('aria-valuenow', String(n));
+      bar.setAttribute('aria-valuetext', n + ' of ' + WEEKS + ' weeks');
+      msg.textContent = messageFor(n);
+      resetBtn.disabled = n === 0;
+    }
+
+    grid.addEventListener('click', function (e) {
+      var btn = e.target.closest('.week');
+      if (!btn) return;
+      var wk = Number(btn.getAttribute('data-week'));
+      if (ticked.has(wk)) { ticked.delete(wk); } else {
+        ticked.add(wk);
+        btn.classList.remove('pop');
+        void btn.offsetWidth;
+        btn.classList.add('pop');
+      }
+      if (canStore && !saveTicks(ticked)) { canStore = false; notice.hidden = false; }
+      render();
+    });
+
+    resetBtn.addEventListener('click', function () {
+      confirmBox.hidden = false;
+      yesBtn.focus();
+    });
+    noBtn.addEventListener('click', function () {
+      confirmBox.hidden = true;
+      resetBtn.focus();
+    });
+    yesBtn.addEventListener('click', function () {
+      ticked.clear();
+      if (canStore) clearTicks();
+      confirmBox.hidden = true;
+      render();
+      var first = $('.week', grid);
+      if (first) first.focus();
+    });
+
+    render();
+  })();
+
+  /* ===== INTERACTIVE 2: Tell It Your Way ===== */
+  (function setupStories() {
+    var form = $('#story-form');
+    if (!form) return;
+    var wall = $('#wall');
+    var wallTitle = $('#wall-title');
+    var wallStatus = $('#wall-status');
+    var text = $('#story-text');
+    var lang = $('#story-language');
+    var nameInput = $('#story-name');
+    var consent = $('#story-consent');
+    var consentBox = $('#consent-box');
+    var storyLabel = $('#story-label');
+    var storyHint = $('#story-hint');
+    var mediaNote = $('#media-note');
+    var mediaNoteText = $('#media-note-text');
+    var countEl = $('#story-count');
+    var storyError = $('#story-error');
+    var consentError = $('#consent-error');
+    var MAX = CONFIG.storyMaxLength;
+    var nextId = 1;
+
+    var FORMATS = {
+      text:     { label: 'Text',             icon: 'i-text',  field: 'Your story', hint: 'Write it however feels right for you.' },
+      photo:    { label: 'Photo',            icon: 'i-photo', field: 'A caption for your photo', hint: 'A few words about what the photo means to you.', media: 'photo', mediaText: 'A photo would appear here' },
+      voice:    { label: 'Voice',            icon: 'i-voice', field: 'A short description of your voice note', hint: 'A few words so people know what they’ll hear.', media: 'voice recording', mediaText: 'A voice note would play here' },
+      video:    { label: 'Video',            icon: 'i-video', field: 'A short description of your video', hint: 'A few words so people know what they’ll see.', media: 'video', mediaText: 'A short video would play here' },
+      language: { label: 'Another language', icon: 'i-lang',  field: 'Your story, in the language you choose', hint: 'Write in any language or mix of languages.' }
+    };
+
+    text.setAttribute('maxlength', String(MAX));
+
+    function currentFormat() {
+      var checked = $('input[name="format"]:checked', form);
+      return checked && FORMATS[checked.value] ? checked.value : 'text';
+    }
+    function updateFormatUI() {
+      var f = FORMATS[currentFormat()];
+      storyLabel.textContent = f.field;
+      storyHint.textContent = f.hint;
+      if (f.media) {
+        mediaNoteText.textContent = 'In a live version, you would upload your ' + f.media + ' here. For this prototype, add a short caption instead.';
+        mediaNote.hidden = false;
+      } else {
+        mediaNote.hidden = true;
+      }
+    }
+    function updateCount() { countEl.textContent = text.value.length + ' / ' + MAX; }
+
+    function setError(input, errEl, message, box) {
+      errEl.querySelector('span').textContent = message;
+      errEl.hidden = false;
+      input.setAttribute('aria-invalid', 'true');
+      var ids = (input.getAttribute('aria-describedby') || '').split(' ').filter(Boolean);
+      if (ids.indexOf(errEl.id) === -1) ids.push(errEl.id);
+      input.setAttribute('aria-describedby', ids.join(' '));
+      if (box) box.classList.add('is-invalid');
+    }
+    function clearError(input, errEl, box) {
+      errEl.hidden = true;
+      input.removeAttribute('aria-invalid');
+      var ids = (input.getAttribute('aria-describedby') || '').split(' ').filter(function (id) { return id && id !== errEl.id; });
+      if (ids.length) input.setAttribute('aria-describedby', ids.join(' ')); else input.removeAttribute('aria-describedby');
+      if (box) box.classList.remove('is-invalid');
+    }
+
+    $$('input[name="format"]', form).forEach(function (r) { r.addEventListener('change', updateFormatUI); });
+    text.addEventListener('input', function () { updateCount(); if (text.value.trim()) clearError(text, storyError); });
+    consent.addEventListener('change', function () { if (consent.checked) clearError(consent, consentError, consentBox); });
+
+    function icon(id) {
+      var ns = 'http://www.w3.org/2000/svg';
+      var svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('class', 'icon');
+      svg.setAttribute('aria-hidden', 'true');
+      svg.setAttribute('focusable', 'false');
+      var use = document.createElementNS(ns, 'use');
+      use.setAttribute('href', '#' + id);
+      svg.appendChild(use);
+      return svg;
+    }
+    function el(tag, cls, txt) {
+      var node = document.createElement(tag);
+      if (cls) node.className = cls;
+      if (txt != null) node.textContent = txt;
+      return node;
+    }
+
+    function buildCard(story) {
+      var f = FORMATS[story.format];
+      var li = el('li');
+      var card = el('article', 'story-card story-card--mine story-card--new glass');
+      card.setAttribute('tabindex', '-1');
+      card.setAttribute('aria-label', 'Your story, ' + f.label);
+
+      var head = el('div', 'story-card__head');
+      var fmt = el('span', 'story-card__format');
+      fmt.appendChild(icon(f.icon));
+      fmt.appendChild(document.createTextNode(f.label));
+      head.appendChild(fmt);
+      head.appendChild(el('span', 'tag', 'Your story'));
+      card.appendChild(head);
+
+      if (f.media) {
+        var ph = el('div', 'media-ph');
+        ph.appendChild(icon(f.icon));
+        ph.appendChild(document.createTextNode(f.mediaText + ' in a live version'));
+        card.appendChild(ph);
+      }
+      card.appendChild(el('p', 'story-card__text', story.text));
+      if (story.language) card.appendChild(el('p', 'story-card__lang', 'Language: ' + story.language));
+
+      var foot = el('div', 'story-card__foot');
+      var who = el('span');
+      who.appendChild(el('span', 'story-card__name', story.name || 'Anonymous'));
+      who.appendChild(document.createElement('br'));
+      who.appendChild(document.createTextNode('Prototype: nothing leaves your device'));
+      foot.appendChild(who);
+      var remove = el('button', 'btn btn--ghost btn--small', 'Remove');
+      remove.type = 'button';
+      remove.setAttribute('aria-label', 'Remove your ' + f.label.toLowerCase() + ' story from the wall');
+      remove.addEventListener('click', function () {
+        li.remove();
+        wallStatus.textContent = 'Your story was removed from the wall.';
+        wallTitle.focus();
+      });
+      foot.appendChild(remove);
+      card.appendChild(foot);
+      li.appendChild(card);
+      return li;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var ok = true;
+      var firstInvalid = null;
+      var format = currentFormat();
+      var body = text.value.trim();
+
+      if (!body) {
+        ok = false;
+        setError(text, storyError, FORMATS[format].media ? 'Please add a short caption or description.' : 'Please write a few words. Even one sentence is enough.');
+        firstInvalid = firstInvalid || text;
+      } else { clearError(text, storyError); }
+
+      if (!consent.checked) {
+        ok = false;
+        setError(consent, consentError, 'Please tick the consent box so we know you’re happy for this to appear on the wall.', consentBox);
+        firstInvalid = firstInvalid || consent;
+      } else { clearError(consent, consentError, consentBox); }
+
+      if (!ok) { firstInvalid.focus(); return; }
+
+      var story = {
+        id: nextId++,
+        format: format,
+        text: body.slice(0, MAX),
+        language: lang.value.trim().slice(0, 60),
+        name: nameInput.value.trim().slice(0, 40)
+      };
+      var li = buildCard(story);
+      wall.insertBefore(li, wall.firstChild);
+
+      form.reset();
+      updateFormatUI();
+      updateCount();
+      wallStatus.textContent = 'Your story was added to the wall for this browser session.';
+      var card = li.querySelector('.story-card');
+      card.focus({ preventScroll: true });
+      card.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+    });
+
+    updateFormatUI();
+    updateCount();
+  })();
+})();
+</script>
+</body>
+</html>
