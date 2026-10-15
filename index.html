@@ -285,7 +285,10 @@
   /* ---------- Watch ---------- */
   .video-frame { padding: 10px; }
   .video-frame__inner { position: relative; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; background: var(--navy-deeper); }
-  .video-frame video { width: 100%; height: 100%; object-fit: contain; background: var(--navy-deeper); }
+  .video-frame iframe { display: block; width: 100%; height: 100%; border: 0; background: var(--navy-deeper); }
+  .video-open { margin: 14px 0 0; text-align: center; font-size: .95rem; }
+  .video-open a { color: var(--ice); font-weight: 600; text-decoration-color: var(--amber); text-decoration-thickness: 2px; }
+  .video-open a:hover { color: var(--amber); }
   .placeholder {
     position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 10px; padding: 20px; text-align: center; color: var(--ice);
@@ -802,9 +805,7 @@
       </div>
       <div class="video-frame glass reveal">
         <div class="video-frame__inner" id="video-wrap">
-          <video id="manifesto-video" controls playsinline preload="metadata" aria-label="The Invisible Walls manifesto animation">
-            Your browser can’t play this video.
-          </video>
+          <iframe id="manifesto-video" title="The Invisible Walls manifesto animation: Step Through the Glass" loading="lazy" allow="fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe>
           <div class="placeholder" id="video-placeholder" hidden>
             <span class="door" aria-hidden="true"><svg viewBox="0 0 32 40" focusable="false"><use href="#i-door"/></svg></span>
             <p class="placeholder__title">Our animation is on its way</p>
@@ -813,6 +814,7 @@
           </div>
         </div>
       </div>
+      <p class="video-open" id="video-open" hidden><a target="_blank" rel="noopener">Open the animation full screen ↗</a></p>
     </div>
   </section>
 
@@ -1110,8 +1112,7 @@
     WEEKS: 12,
     paths: {
       poster: 'assets/poster.jpg',
-      video: 'assets/manifesto.mp4',
-      videoPoster: 'assets/video-poster.jpg'
+      animation: 'https://hujiawei-david.github.io/invisible-walls-video/'
     },
     storageKey: 'invisible-walls:say-one-hello:v1',
     storyMaxLength: 600
@@ -1161,34 +1162,22 @@
     $$('.demand').forEach(function (card) { navIO.observe(card); });
   }
 
-  /* ----- Video with graceful placeholder ----- */
+  /* ----- Animation embed with graceful placeholder ----- */
   (function setupVideo() {
-    var video = $('#manifesto-video');
+    var frame = $('#manifesto-video');
     var wrap = $('#video-wrap');
     var placeholder = $('#video-placeholder');
-    if (!video) return;
-    var failed = false;
-    function showPlaceholder() {
-      if (failed) return;
-      failed = true;
-      try { video.pause(); } catch (e) { /* ignore */ }
-      video.hidden = true;
+    var openLink = $('#video-open');
+    if (!frame) return;
+    if (!CONFIG.paths.animation) {
+      frame.hidden = true;
       placeholder.hidden = false;
       wrap.classList.add('is-missing');
+      return;
     }
-    if (!video.canPlayType || video.canPlayType('video/mp4') === '') { showPlaceholder(); return; }
-    var source = document.createElement('source');
-    source.type = 'video/mp4';
-    source.addEventListener('error', showPlaceholder);
-    video.addEventListener('error', showPlaceholder);
-    source.src = CONFIG.paths.video;
-    video.appendChild(source);
-    video.load();
-
-    var probe = new Image();
-    probe.onload = function () { if (!failed) video.poster = CONFIG.paths.videoPoster; };
-    probe.onerror = function () { /* no poster: the frame keeps its navy background */ };
-    probe.src = CONFIG.paths.videoPoster;
+    frame.src = CONFIG.paths.animation;
+    openLink.querySelector('a').href = CONFIG.paths.animation;
+    openLink.hidden = false;
   })();
 
   /* ----- Poster image with placeholder ----- */
